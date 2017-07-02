@@ -22,7 +22,15 @@
     "url": "https://github.com/ygd182/backClub/issues"
   },
   "homepage": "https://github.com/ygd182/backClub#readme",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
   }
 }
