@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var tiposSocioArray = ['vitalicio', 'mayor', 'menor'];
+var tiposSocioArray = ['Activo', 'Cadete', 'Futuro'];
 
 var Socio = new Schema ({ 
 	nroSocio: {
@@ -10,13 +10,17 @@ var Socio = new Schema ({
     },
     nombre: String,
     dni: String,
+    telefono: Number,
+    fechaNacimiento: Date,
+    email: String,
     direccion: {
         calle: String,
         numero: String,
         ciudad: String,
         codigoPostal: Number
     },
-    tipoSocio: { type: String, enum: tiposSocioArray}
+    tipoSocio: { type: String, enum: tiposSocioArray},
+    observaciones: String
 });
 
 module.exports = mongoose.model('Socio', SocioSchema);
