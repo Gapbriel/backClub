@@ -17,7 +17,6 @@ var Socio = new Schema ({
         codigoPostal: Number
     },
     tipoSocio: { type: String, enum: tiposSocioArray}
-
 });
 
 module.exports = mongoose.model('Socio', SocioSchema);
