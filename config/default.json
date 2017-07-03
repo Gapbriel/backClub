@@ -1,0 +1,12 @@
+{
+	"port": 3100,
+	"mongodb" : {
+		"instances" : [
+			{
+				"host": "admin:1234@ds143892.mlab.com",
+				"port": 43892
+			}
+		],
+		"db": "club"
+	}
+}

@@ -3,15 +3,15 @@ var Schema = mongoose.Schema;
 
 var tiposSocioArray = ['Activo', 'Cadete', 'Futuro'];
 
-var Socio = new Schema ({ 
+var SocioSchema = new Schema ({ 
 	nroSocio: {
         type: Number,
         required: true
     },
     nombre: String,
-    dni: String,
+    dni: Number,
     telefono: Number,
-    fechaNacimiento: Date,
+    fechaNacimiento: Number,
     email: String,
     direccion: {
         calle: String,

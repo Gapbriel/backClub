@@ -4,7 +4,7 @@
   "description": "node js club backend",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ygd182/backClub#readme",
   "dependencies": {
     "body-parser": "~1.17.1",
+    "config": "^1.26.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
